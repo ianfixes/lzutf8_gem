@@ -1,6 +1,7 @@
 # LZUTF8 Gem - providing `lzutf8`
 [![Gem Version](https://badge.fury.io/rb/lzutf8.svg)](https://rubygems.org/gems/lzutf8)
 [![Documentation](http://img.shields.io/badge/docs-rdoc.info-blue.svg)](http://www.rubydoc.info/gems/lzutf8/0.0.1)
+
 A ruby gem containing an implementation of LZUTF-8 compression and decompression
 
 * `LZUTF8.compress("some input")`
