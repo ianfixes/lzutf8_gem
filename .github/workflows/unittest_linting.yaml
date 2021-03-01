@@ -1,0 +1,19 @@
+# This is the name of the workflow, visible on GitHub UI
+name: linux
+
+on: [push, pull_request]
+
+jobs:
+  "unittest_lint":
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6
+      - name: Check style, functionality, and usage
+        run: |
+          bundle install
+          bundle exec rubocop --version
+          bundle exec rubocop -D .
+          bundle exec rspec --backtrace

@@ -1,0 +1,139 @@
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  TargetRubyVersion: 2.5
+  NewCops: enable
+  SuggestExtensions: false
+  Exclude:
+    - '*.gemspec'
+    - 'spec/*.rb'
+    - './vendor/**/*'
+
+# TODO: stuff I actually want to fix
+Style/RescueStandardError:
+  Enabled: false
+
+Security/Open:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# broken :( https://github.com/rubocop-hq/rubocop/issues/9144
+Style/StringConcatenation:
+  Enabled: false
+
+# Ruins git diffs
+Style/AccessorGrouping:
+  Enabled: false
+
+# Ruins keeping the upper half of the conditional smaller
+Style/NegatedIfElseCondition:
+  Enabled: false
+
+# affects calling style?
+Style/OptionalBooleanParameter:
+  Enabled: false
+
+# Extra lines for readability
+Layout/EmptyLinesAroundClassBody:
+  Enabled: false
+
+Layout/EmptyLinesAroundMethodBody:
+  Enabled: false
+
+Layout/EmptyLinesAroundModuleBody:
+  Enabled: false
+
+# This can add clarity
+Style/CommentedKeyword:
+  Enabled: false
+
+# Configuration parameters: AllowForAlignment.
+Layout/ExtraSpacing:
+  Enabled: false
+
+Layout/EndOfLine:
+  EnforcedStyle: lf
+
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: start_of_line
+
+Layout/CaseIndentation:
+  EnforcedStyle: end
+
+Layout/LineLength:
+  Enabled: true
+  Max: 130
+
+# Configuration parameters: CountComments.
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Enabled: false
+
+# Configuration parameters: CountKeywordArgs.
+Metrics/ParameterLists:
+  Max: 7
+
+Style/BlockComments:
+  Enabled: false
+
+Style/ColonMethodCall:
+  Enabled: false
+
+# if you find "a == 3" readable and "3 == a" 'unreadable', do not contribute to this project.
+Style/YodaCondition:
+  Enabled: false
+
+# Configuration parameters: EnforcedStyle, SupportedStyles.
+Style/FormatString:
+  Enabled: false
+
+Style/NumericLiterals:
+  MinDigits: 9
+
+Style/WhileUntilDo:
+  Enabled: false
+
+# Offense count: 1
+Metrics/CyclomaticComplexity:
+  Enabled: false
+  Max: 11
+
+# Offense count: 1
+Metrics/PerceivedComplexity:
+  Enabled: false
+  Max: 14
+
+# Cop supports --auto-correct.
+Style/RedundantSelf:
+  Enabled: false
+
+# because apostrophes
+Style/StringLiterals:
+  Enabled: false
+
+Style/TrailingCommaInArrayLiteral:
+  Enabled: false
+
+Style/TrailingCommaInHashLiteral:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
+
+# because if the robot can comment better than me then
+# it might as well learn to write the code for me
+Style/CommentAnnotation:
+  Enabled: false

@@ -1,0 +1,3 @@
+-M redcarpet -m markdown
+
+lib/lzutf8.rb lib/**/*.rb

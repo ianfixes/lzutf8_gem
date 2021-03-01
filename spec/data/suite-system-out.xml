@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="XYZ/e2e_tests" tests="1" failures="0" errors="1">
+        <testcase name="XYZ/e2e_tests" status="run" duration="9" time="9">
+            <error message="exited with error code 1"></error>
+        </testcase>
+        <system-out>
+    Generated test.log (if the file is not UTF-8, then this may be unreadable):
+                      <![CDATA[exec \THING "$0" || exit 1
+    Executing tests from //XYZ
+    -----------------------------------------------------------------------------
+    Traceback (most recent call last):
+      File "/tmp/text_models/bazel/sandbox/linux-sandbox/8/execroot/text_models/bazel-out/k8-fastbuild/bin/XYZ/e2e_tests.runfiles/text_models/XYZ/e2e_tests.py", line 6, in <module>
+        from XYZ.extractor import Extractor
+      File "/tmp/text_models/bazel/sandbox/linux-sandbox/8/execroot/text_models/bazel-out/k8-fastbuild/bin/XYZ/e2e_tests.runfiles/text_models/XYZ/extractor.py", line 7, in <module>
+        from ABC.DEF.helper import join_set
+    ModuleNotFoundError: No module named 'ABC']]>
+        </system-out>
+        <system-out>
+    Generated test.log (if the file is not UTF-8, then this may be unreadable):
+                      <![CDATA[exec \THING "$0" || exit 1
+    Executing tests from //XYZ
+    -----------------------------------------------------------------------------
+    Traceback (most recent call last):
+      File "/tmp/text_models/bazel/sandbox/linux-sandbox/8/execroot/text_models/bazel-out/k8-fastbuild/bin/XYZ/e2e_tests.runfiles/text_models/XYZ/e2e_tests.py", line 6, in <module>
+        from XYZ.extractor import Extractor
+      File "/tmp/text_models/bazel/sandbox/linux-sandbox/8/execroot/text_models/bazel-out/k8-fastbuild/bin/XYZ/e2e_tests.runfiles/text_models/XYZ/extractor.py", line 7, in <module>
+        from ABC.DEF.helper import join_set
+    ModuleNotFoundError: No module named 'ABC']]>
+        </system-out>
+    </testsuite>
+</testsuites>
