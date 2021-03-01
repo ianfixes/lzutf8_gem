@@ -7,8 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 ### Added
-- `.compress` and `.decompress` functions
-- `.explain` and `.pointer_info` funcitons
+
 ### Changed
 
 ### Deprecated
@@ -20,4 +19,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ### Security
 
 
-[Unreleased]: https://github.com/ianfixes/lzutf8_gem/compare/v0.0.0...HEAD
+## [0.0.1] - 2021-03-01
+### Added
+- `.compress` and `.decompress` functions
+- `.explain` and `.pointer_info` funcitons
+
+
+[Unreleased]: https://github.com/ianfixes/lzutf8_gem/compare/v0.0.1...HEAD
+[0.0.1]: https://github.com/ianfixes/lzutf8_gem/compare/v0.0.0...v0.0.1
