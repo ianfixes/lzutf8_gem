@@ -24,7 +24,6 @@ gem install bundler
 ```
 
 Be prepared to write tests to accompany any code you would like to see merged.
-See `SampleProjects/TestSomething/test/*.cpp` for the existing tests (run by rspec).
 
 
 ## Packaging the Gem
